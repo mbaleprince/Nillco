@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+
+{% block title %} About {% endblock title %}
+
+
+{% block content %}
+    
+    {% if not user.is_authenticated  %}
+        <br>
+        <a href="{% url 'home' %}" class="btn btn-secondary">Go Back</a>
+    {% endif %}    
+    
+    <div class="align-middle" style="color: #EF7F01; font-style: bold; font-size: 3rem;">NILLOC SERVICES LIMITED </div>
+    <div class="align-middle" style="color: rgb(73, 73, 73)">INVENTORY MANAGEMENT SYSTEM</div>
+    <br><br>
+
+    <div class="align-middle"> 
+        <h2 style="color:#A80739">| who we are !! |</h3> <br>
+
+            <div class="align-middle" style="color: #000000"><p>
+                NILLOC SERVICES LIMITED is a Service Company registered in Uganda for the purpose of offering
+                Agricultural, ICT and general supply related services to clients who have the need for the related services.
+                The company therefore has specialized in offering services like Supply of agricultural inputs,
+                Agro consultancy, supply and sale of computers, printers, phone parts and repair, networking and
+                general ICT services, Trainings as well as general supplies.
+            </p>
+            </div>
+        <br>
+    </div>
+        <h2 style="color:#A80739" class="align-middle">| Features of Nillco Inventory Management System. |</h3> <br>
+            <ul style="display:table; margin:0 auto; ">                
+                <li style="color:#000000;">Interactive Chart to display current available stock</li>
+                <li style="color:#000000;">Stock details like current available stock are maintained</li>
+                <li style="color:#000000;">Incoming transactions are done through purpchases</li>
+                <li style="color:#000000;">Outgoing transactions are done through sales</li>
+                <li style="color:#000000;">Every transaction performed through the software is recorded</li>
+                <li style="color:#000000;">Bill is dynamically rendered and can be printed</li>
+                <li style="color:#000000;">Separate profiles are maintained for suppliers</li>
+            </ul>  
+        <br>
+    <div class="align-middle">
+        <h2 style="color:#EF7F01" >| Developed by |</h3> <br>
+            <p>Acema Alex Founder/Developer</p>
+            <p>Of Okaltech ventures Ltd</p>
+            <br><br><br>
+    </div>
+
+{% endblock content %}
